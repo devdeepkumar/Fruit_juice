@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryBg: #ffe3aa;
+  --primaryColor: #feac00;
+  --secondaryColor: gray;
+  --themeColor: #1e3233;
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --secondryText:#5b5b5b;
+  --greenColor:#0F7A46;
+}
+
+html {
+  font-size: 62.29%;
+}
+body {
+  font-size: 18px;
+  background: var(--primaryBg);
+  font-family: sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--whiteColor);
+  font-size: 1.6rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+section {
+  padding-top: 5rem;
+}
+img{
+  width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 85%;
+  margin-inline: auto;
+}
+
+.common_btn {
+  background: var(--primaryColor);
+  padding: 1rem 2rem;
+  color: var(--blackColor);
+  border-radius: 3rem;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.text_center {
+  text-align: center;
+}
+
+.grid_col_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+}
+
+.common_heading {
+  font-size: 5rem;
+  color: var(--themeColor);
+  margin-bottom: 2rem;
+  font-family: "Anton SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.common_para {
+  margin-bottom: 2rem;
+  color: var(--secondryText);
+}
+
+.top_heading {
+  background: var(--primaryBg);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.top_heading a {
+  color: var(--themeColor);
+}
+
+/* Header Section Start Here  */
+header {
+  padding-block: 2rem;
+  background: var(--themeColor);
+  color: var(--whiteColor);
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Main Section Started Here  */
+main {
+  background: var(--themeColor);
+  color: var(--whiteColor);
+  height:58rem;
+  position: relative;
+}
+
+.main_box {
+  max-width: 70%;
+  text-align: center;
+  padding-top: 8%;
+  position: relative;
+
+}
+.main_box .left_image {
+    position: absolute;
+    top: 10rem;
+    left: -23rem;
+}
+.main_box .left_image img{
+    width: 45rem;
+}
+.main_box .right_image img{
+    width: 45rem;
+}
+.main_box .right_image {
+    position: absolute;
+    top: 10rem;
+    right: -22rem;
+}
+.main_box h3 {
+  text-transform: uppercase;
+  color: var(--primaryColor);
+  margin-bottom: 1.5rem;
+  font-family: "Anton SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main_box h1 {
+  text-transform: uppercase;
+  text-decoration: double;
+  font-size: 6rem;
+  margin-bottom: 1.5rem;
+  font-family: "Londrina Outline", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main_box p {
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-inline: 16rem;
+  font-size: 1.6rem;
+}
+
+
+/* Shape Divider Css  */
+.custom-shape-divider-bottom-1736345383 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1736345383 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 56px;
+}
+
+.custom-shape-divider-bottom-1736345383 .shape-fill {
+    fill: #ffefcb;
+}
+
+
+/* Main section End  */
+
+
+/* About Section Start  */
+.about_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_right img{
+    width: 50rem;
+    height: 50rem;
+}
+
+
+
+
+/* Juice collection Section Start  */
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.card_box .image_box{
+  background: var(--whiteColor);
+  border-radius: 50%;
+  padding: 2rem;
+  overflow:hidden ;
+}
+.card_box .image_box img{
+  width: 22rem;
+}
+
+.card_box p{
+  color: var(--blackColor);
+  font-weight: 700;
+  margin-block: 1rem;
+}
+.card_box span{
+  color: var(--secondryText);
+}
+
+
+/* Special Menu Section Start Here  */
+
+.speccial_sec{
+  display:grid;
+  grid-template-columns: 40% 60%;
+
+}
+
+.speccial_sec .yellow_div img{
+  width:100%;
+}
+.yellow_div{
+  background-color: var(--primaryColor);
+   padding-inline: 10rem;
+   padding-top: 5rem;
+}
+.green_div{
+  background: var(--greenColor);
+   padding-inline: 10rem;
+   padding-block: 5rem;
+   color: var(--whiteColor);
+
+   .common_heading{
+    color: var(--whiteColor);
+   }
+}
+.special_item_container{
+  margin-top: 5rem;
+}
+.special_item_container .item_box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.special_item_container .item_box .img_box{
+  border: .4rem solid var(--whiteColor);
+  border-radius: 50%;
+
+}
+.special_item_container .item_box .img_box img{
+  width: 8rem;
+  height: 8rem;
+   border-radius: 50%;
+   vertical-align: middle;
+}
+.special_item_container .item_box .item{
+  display: flex;
+  gap: 1rem;
+}
+.special_item_container .item_box .item img{
+  width: 100%;
+}
+.special_item_container .item_box .item .item_name{
+  min-width: 11rem;
+}
+
+.special_item_container .item_box .item span{
+  font-weight: 700;
+}
+.special_item_container .item_box p{
+  color: #ede6e6;
+  margin-top: 1.5rem;
+}
+
+
+
+
+/* You Gonna  Love  The Varity Of Product  */
+
+.youlove .left_section{
+  padding: 5rem;
+}
+.youlove .left_section img{
+  width: 100%;
+}
+ 
+.varity_product{
+  display: flex;
+ justify-content: space-between;
+}
+.varity_product .varity_box{
+ display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.varity_product .varity_box .image_box{
+  background-color: var(--greenColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.varity_product .varity_box .image_box img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.varity_product .varity_box span{
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.youlove .right_section .btn_box{
+  margin-top: 5rem
+}
+
+
+/* Image Gallary Section Start */
+
+.gallary_sec .common_heading{
+  color: var(--whiteColor);
+
+}
+.image_container {
+    display: grid;
+    grid-template-columns: 828px 371px;
+    gap: 2rem;
+    justify-content: center;
+    padding-block: 5rem;
+   
+}
+
+.image_container .grid_col_2{
+  gap: 2rem;
+}
+
+.grid_col_3{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+
+.image_container .gallary {
+  gap: 2rem;
+
+}
+.grid_gap{
+  display: grid;
+  gap: 2rem;
+}
+
+.image_container .gallary img{
+  border-radius: 4rem;
+}
+
+
+/* Testominial Section  */
+.testimonial_section {
+  margin-bottom: 5rem;
+}
+.testimonial_section .testimonial_card {
+  background-color: var(--whiteColor);
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+.testimonial_section .testimonial_card  .profile{
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.testimonial_section .testimonial_card  .profile .user_detail{
+  display: flex;
+  gap: 2rem;
+   align-items: center;
+}
+
+.testimonial_section .testimonial_card  .profile .stars span{
+  font-size: 5rem;
+  color: var(--primaryColor);
+}
+.testimonial_section .testimonial_card .testi_image img{
+  width: 8rem;
+  border-radius: 50%;
+
+}
+
+
+/* Footer Section Started Here  */
+
+footer{
+  background-color: var(--greenColor);
+  color: var(--whiteColor);
+  padding-block: 4rem;
+  
+}
+
+footer .footer_top_div{
+  padding: 5rem;
+  border: .5rem dashed var(--whiteColor);
+  border-radius: 2rem;margin-block: 5rem;
+}
+
+.footer_top_div form input{
+  padding: 1rem;
+  background: var(--whiteColor);
+  width: 40%;
+  border: none;
+  outline: none;
+  border-radius: 1.5rem;
+}
+
+.footer_top_div form button{
+  background: #ff6d0d;
+  color:var(--whiteColor);
+   padding: 1rem 3rem;
+   border-radius: 1.5rem;
+   border: none;
+   outline: none;
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+.footer_bottom_div{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 3rem;
+}
+.footer_bottom_div .first_col{
+  grid-column: span 2;
+}
+
+footer .common_heading{
+  color: var(--primaryColor);
+}
+
+footer .common_para{
+  color: var(--whiteColor);
+  margin-inline: 20rem;
+}
+
+.footer_bottom_div .footer_logo{
+  margin-bottom: 1.5rem;
+}
+.footer_bottom_div h3{
+  font-family: "Anton SC", serif;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.footer_bottom_div li,a{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
