@@ -77,6 +77,9 @@
   .footer_bottom_div {
     grid-template-columns: repeat(1, 1fr);
   }
+  .gallary_sec .heading_img{
+    display: none;
+  }
 }
 
 @media (max-width: 567px) {
@@ -86,6 +89,10 @@
   .speccial_sec .yellow_div,
   .speccial_sec .green_div {
     padding-inline: 2rem;
+  }
+
+  .gallary_sec{
+    padding-top: 8rem;
   }
   .testimonial_section .testimonial_card .profile .stars {
     display: none;

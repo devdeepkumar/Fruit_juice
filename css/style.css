@@ -38,6 +38,7 @@ p {
 }
 section {
   padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 img {
   width: 100%;
@@ -112,6 +113,7 @@ nav ul {
 
 nav ul li:hover a {
   color: var(--primaryColor);
+  transition: .2s;
 }
 
 .mobile_nav nav {
@@ -379,6 +381,30 @@ main {
 
 /* Image Gallary Section Start */
 
+.gallary_sec{
+  position: relative;
+}
+.gallary_sec .heading_img{
+  position: absolute;
+  top: 11rem;
+  left: 10rem;
+}
+.gallary_sec .heading_img img{
+  width: 40rem;
+  border-radius: 10rem;
+  height: 10rem;
+  object-fit: cover;
+
+}
+.gallary_sec .common_heading{
+  position: relative;
+  z-index: 1;
+}
+.gallary_sec .common_heading  img{
+  width: 10rem;
+  border-radius: 2rem;
+}
+
 .gallary_sec .common_heading {
   color: var(--whiteColor);
 }
@@ -412,8 +438,37 @@ main {
   border-radius: 4rem;
 }
 
+section {
+  position: relative;
+}
+.gallary_sec {
+  padding-top: 15rem;
+}
+.custom-shape-divider-top-1736406241 {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1736406241 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 73px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1736406241 .shape-fill {
+  fill: #ffe3aa;
+}
+
 /* Testominial Section  */
 .testimonial_section {
+  margin-top: 5rem;
   margin-bottom: 5rem;
 }
 .testimonial_section .testimonial_card {
@@ -516,33 +571,7 @@ a {
   margin-bottom: 1.5rem;
 }
 
-section {
-  position: relative;
-}
-.gallary_sec {
-  padding-top: 8rem;
-}
-.custom-shape-divider-top-1736406241 {
-  position: absolute;
-  top: -1px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
 
-.custom-shape-divider-top-1736406241 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 73px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1736406241 .shape-fill {
-  fill: #ffe3aa;
-}
 
 footer {
   position: relative;
@@ -562,7 +591,7 @@ footer {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 140px;
+  height: 60px;
 }
 
 .custom-shape-divider-top-1736406929 .shape-fill {
@@ -570,10 +599,28 @@ footer {
 }
 
 footer .footer_top_div {
-  margin-top: 15rem;
+  margin-top: 8rem;
 }
 
 .copyright {
   padding: 1.5rem;
+}
+
+
+/* Banner Section Style */
+.banner_sec{
+  padding: 0;
+}
+.banner_box{
+  display: flex;
+  gap: 4rem;
+  overflow: hidden;
+}
+.banner_box div{
+  min-width: 20rem;
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Anton SC", serif;
 }
 
