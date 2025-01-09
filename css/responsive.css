@@ -97,6 +97,17 @@
   .custom-shape-divider-top-1736406929 svg {
     height: 4.8rem;
   }
+
+  /* .special_item_container .item_box .item .item_name{
+    min-width: auto;
+  } */
+
+  .special_item_container .item_box .item span{
+    font-size: 1.6rem;
+  }
+  .special_item_container .item_box p{
+    margin-top: 1rem;
+  }
   footer .footer_top_div {
     margin-top: 5rem;
   }
