@@ -59,6 +59,7 @@ img {
   font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
+  font-family: "Poppins", serif;
 }
 .text_center {
   text-align: center;
@@ -102,31 +103,47 @@ header {
 .desktop_nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 nav ul {
   display: flex;
   gap: 2rem;
 }
 
-nav ul li:hover a{
+nav ul li:hover a {
   color: var(--primaryColor);
 }
-
 
 .mobile_nav nav {
   display: none;
 }
-.mobile_nav button{
+.mobile_nav button {
   margin-top: 2rem;
 }
 .mobile_nav nav ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
+}
+
+header{
+  position: relative;
+}
+
+.mobile_nav .navbar{
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  left: 0;
+  top: 10rem;
+  background-color: var(--themeColor);
+  z-index: 1;
+  padding: 0;
+  padding-inline: 10%;
 }
 
 .mobile_nav .hamburger img {
-  width: 2rem;
+  width: 3rem;
 }
 .mobile_nav nav.active {
   display: block;
@@ -135,7 +152,6 @@ nav ul li:hover a{
 .mobile_nav {
   display: none;
 }
-
 
 /* Main Section Started Here  */
 main {
@@ -249,9 +265,11 @@ main {
   color: var(--blackColor);
   font-weight: 700;
   margin-block: 1rem;
+  font-size: 1.8rem;
 }
 .card_box span {
   color: var(--secondryText);
+  font-size: 1.5rem;
 }
 
 /* Special Menu Section Start Here  */
@@ -423,13 +441,12 @@ main {
   width: 8rem;
   border-radius: 50%;
 }
-.testimonial_section .user_detail .testi_name p{
+.testimonial_section .user_detail .testi_name p {
   font-weight: 600;
 }
-.testimonial_section .user_detail .testi_name span{
+.testimonial_section .user_detail .testi_name span {
   font-size: 1.5rem;
 }
-
 
 /* Footer Section Started Here  */
 
@@ -452,18 +469,20 @@ footer .footer_top_div {
   width: 40%;
   border: none;
   outline: none;
-  border-radius: 1.5rem;
+  border-radius: 4rem;
+  font-family: "Poppins", serif;
 }
 
 .footer_top_div form button {
   background: #ff6d0d;
   color: var(--whiteColor);
   padding: 1.5rem 3rem;
-  border-radius: 1.5rem;
+  border-radius: 4rem;
   border: none;
   outline: none;
   font-size: 1.5rem;
   font-weight: 500;
+  font-family: "Poppins", serif;
 }
 .footer_bottom_div {
   display: grid;
@@ -554,6 +573,7 @@ footer .footer_top_div {
   margin-top: 15rem;
 }
 
-.copyright{
+.copyright {
   padding: 1.5rem;
 }
+
