@@ -447,7 +447,7 @@ footer .footer_top_div {
 }
 
 .footer_top_div form input {
-  padding: 1rem;
+  padding: 1.5rem;
   background: var(--whiteColor);
   width: 40%;
   border: none;
@@ -458,7 +458,7 @@ footer .footer_top_div {
 .footer_top_div form button {
   background: #ff6d0d;
   color: var(--whiteColor);
-  padding: 1rem 3rem;
+  padding: 1.5rem 3rem;
   border-radius: 1.5rem;
   border: none;
   outline: none;
