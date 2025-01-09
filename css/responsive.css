@@ -60,7 +60,8 @@
 
   .mobile_nav {
     display: flex;
-    justify-content: space-between;
+            justify-content: space-between;
+            align-items: center;
   }
 
   .main_box p {

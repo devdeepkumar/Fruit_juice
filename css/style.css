@@ -106,10 +106,40 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+.desktop_nav
+nav ul {
+  display: flex;
+  gap: 3rem;
+}
+
+.mobile_nav
 nav ul {
   display: flex;
   gap: 2rem;
 }
+
+.desktop_nav
+.btn_box{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.desktop_nav
+.logo img{
+  height: 70px;
+}
+
+.desktop_nav
+nav ul li a{
+  font-size: 1.7rem;
+}
+
+.mobile_nav .logo img{
+  height: 60px;
+}
+
 
 nav ul li:hover a {
   color: var(--primaryColor);
